@@ -51,6 +51,7 @@ sources:
       # MAGIA Packages
       - hw/mesh/magia_pkg.sv
       - hw/tile/magia_tile_pkg.sv
+      - hw/mesh/noc/magia_noc_pkg.sv
       # MAGIA Tile
       - hw/tile/converters/data2obi.sv
       - hw/tile/converters/obi2data.sv
@@ -81,6 +82,7 @@ sources:
       - target/sim/src/tile/magia_tile_fixture.sv
       - target/sim/src/tile/magia_tile_tb.sv
       - target/sim/src/mesh/magia_tb_pkg.sv
+      - target/sim/src/mesh/magia_l2_mem_wrapper.sv
       - target/sim/src/mesh/magia_vip.sv
       - target/sim/src/mesh/magia_fixture.sv
       - target/sim/src/mesh/magia_tb.sv
