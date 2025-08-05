@@ -48,7 +48,7 @@ package magia_noc_pkg;
     } sam_rule_t;
 
     /**********************************
-    **          ROUTING TABLE         *
+    **          ROUTING TABLE        **
     **********************************/
     // Helper function to get the correct routing table
     function automatic sam_rule_t[SamNumRules-1:0] gen_sam_table(int unsigned num_tiles);

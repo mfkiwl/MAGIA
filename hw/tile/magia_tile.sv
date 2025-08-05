@@ -33,7 +33,11 @@ module magia_tile
   import obi_pkg::*;
   import axi_pkg::*;
   import floo_pkg::*;
+  `ifndef TARGET_STANDALONE_TILE
   import magia_noc_pkg::*;
+  `else
+  import floo_axi_mesh_1x2_noc_pkg::*;
+  `endif
 #(
   // Parameters used by hci_interconnect and l1_spm
   parameter int unsigned          N_MEM_BANKS              = magia_pkg::N_MEM_BANKS,         // Number of memory banks 
